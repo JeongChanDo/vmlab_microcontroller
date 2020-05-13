@@ -10,7 +10,7 @@
 .GCCPATH   "D:\WinAVR-20100110"
 .GCCMAKE   AUTO
 .TARGET    "my_idea.hex"
-.SOURCE    "my_idea.c" 
+.SOURCE    "my_idea.c"
 
 .TRACE              ; Activate micro trace
 
@@ -24,4 +24,34 @@
 ; Micro nodes: RESET, AREF, PA0-PA7, PB0-PB7, PC0-PC7, PD0-PD7, PE0-PE7, PF0-PF7, PG0-PG4, TIM1OVF
 ; Define here the hardware around the micro
 ; ------------------------------------------------------------
+
+D1 VDD n1 ;LED D1이 VDD와 n1 node사이에 연결1
+R1 n1 PC0 330 ; 저항 R1을 n1 node와 PC0 사이에 연결
+
+D2 VDD n2
+R2 n2 PC1 330
+
+D3 VDD n3
+R3 n3 PC2 330
+
+D4 VDD n4
+R4 n4 PC3 330
+
+D5 VDD n5
+R5 n5 PC4 330
+
+D6 VDD n6
+R6 n6 PC5 330
+
+D7 VDD n7
+R7 n7 PC6 330
+
+D8 VDD n8
+R8 n8 PC7 330
+
+K0 PD0 VSS
+K1 PD1 VSS
+
+Xdisp LCD(16 2 250K) PG0 PG1 PG2 PB7 PB6 PB5 PB4 PB3 PB2 PB1 PB0
+
 

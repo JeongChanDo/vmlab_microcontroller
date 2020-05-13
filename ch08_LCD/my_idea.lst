@@ -2098,17 +2098,17 @@
  2003               	...
 DEFINED SYMBOLS
                             *ABS*:00000000 my_idea.c
-C:\Users\do\AppData\Local\Temp/ccRQ4MXf.s:2      *ABS*:0000003f __SREG__
-C:\Users\do\AppData\Local\Temp/ccRQ4MXf.s:3      *ABS*:0000003e __SP_H__
-C:\Users\do\AppData\Local\Temp/ccRQ4MXf.s:4      *ABS*:0000003d __SP_L__
-C:\Users\do\AppData\Local\Temp/ccRQ4MXf.s:5      *ABS*:00000034 __CCP__
-C:\Users\do\AppData\Local\Temp/ccRQ4MXf.s:6      *ABS*:00000000 __tmp_reg__
-C:\Users\do\AppData\Local\Temp/ccRQ4MXf.s:7      *ABS*:00000001 __zero_reg__
-C:\Users\do\AppData\Local\Temp/ccRQ4MXf.s:71     .text:00000000 LCD_init
-C:\Users\do\AppData\Local\Temp/ccRQ4MXf.s:474    .text:00000226 LCD_command
-C:\Users\do\AppData\Local\Temp/ccRQ4MXf.s:1070   .text:0000055c LCD_data
-C:\Users\do\AppData\Local\Temp/ccRQ4MXf.s:1668   .text:00000894 LCD_string
-C:\Users\do\AppData\Local\Temp/ccRQ4MXf.s:1730   .text:000008d8 main
+C:\Users\do\AppData\Local\Temp/cc5WLRpa.s:2      *ABS*:0000003f __SREG__
+C:\Users\do\AppData\Local\Temp/cc5WLRpa.s:3      *ABS*:0000003e __SP_H__
+C:\Users\do\AppData\Local\Temp/cc5WLRpa.s:4      *ABS*:0000003d __SP_L__
+C:\Users\do\AppData\Local\Temp/cc5WLRpa.s:5      *ABS*:00000034 __CCP__
+C:\Users\do\AppData\Local\Temp/cc5WLRpa.s:6      *ABS*:00000000 __tmp_reg__
+C:\Users\do\AppData\Local\Temp/cc5WLRpa.s:7      *ABS*:00000001 __zero_reg__
+C:\Users\do\AppData\Local\Temp/cc5WLRpa.s:71     .text:00000000 LCD_init
+C:\Users\do\AppData\Local\Temp/cc5WLRpa.s:474    .text:00000226 LCD_command
+C:\Users\do\AppData\Local\Temp/cc5WLRpa.s:1070   .text:0000055c LCD_data
+C:\Users\do\AppData\Local\Temp/cc5WLRpa.s:1668   .text:00000894 LCD_string
+C:\Users\do\AppData\Local\Temp/cc5WLRpa.s:1730   .text:000008d8 main
 
 UNDEFINED SYMBOLS
 __mulsf3
