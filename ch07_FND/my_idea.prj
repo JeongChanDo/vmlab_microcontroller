@@ -1,0 +1,41 @@
+; ************************************************************
+; PROJECT:
+; AUTHOR:
+; ************************************************************
+
+; Micro + software running
+; ------------------------------------------------------------
+.MICRO "ATmega128"
+.TOOLCHAIN "GCC"
+.GCCPATH   "D:\WinAVR-20100110"
+.GCCMAKE   AUTO
+.TARGET    "my_idea.hex"
+.SOURCE    "my_idea.c"
+
+.TRACE              ; Activate micro trace
+
+; Following lines are optional; if not included
+; exactly these values are taken by default
+; ------------------------------------------------------------
+.POWER VDD=5 VSS=0  ; Power nodes
+.CLOCK 1meg         ; Micro clock
+.STORE 250m         ; Trace (micro+signals) storage time
+
+; Micro nodes: RESET, AREF, PA0-PA7, PB0-PB7, PC0-PC7, PD0-PD7, PE0-PE7, PF0-PF7, PG0-PG4, TIM1OVF
+; Define here the hardware around the micro
+; ------------------------------------------------------------
+
+;_led7cc : 커먼 캐소드 타입 FND
+; PA0~PA7를 입력
+; PE0를 캐소드에 연결
+X1 _led7cc PA0 PA1 PA2 PA3 PA4 PA5 PA6 PA7 PE0
+X2 _led7cc PA0 PA1 PA2 PA3 PA4 PA5 PA6 PA7 PE1
+X3 _led7cc PA0 PA1 PA2 PA3 PA4 PA5 PA6 PA7 PE2
+X4 _led7cc PA0 PA1 PA2 PA3 PA4 PA5 PA6 PA7 PE3
+X5 _led7cc PA0 PA1 PA2 PA3 PA4 PA5 PA6 PA7 PE4
+X6 _led7cc PA0 PA1 PA2 PA3 PA4 PA5 PA6 PA7 PE5
+X7 _led7cc PA0 PA1 PA2 PA3 PA4 PA5 PA6 PA7 PE6
+X8 _led7cc PA0 PA1 PA2 PA3 PA4 PA5 PA6 PA7 PE7
+
+; 커먼 애노드 타입 사용시 _led7ca
+;FND 설정, Xn _led7cc seg_a seg_b seg_c seg_h ... seg_h GND

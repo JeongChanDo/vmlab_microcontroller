@@ -1,0 +1,51 @@
+; ************************************************************
+; PROJECT:
+; AUTHOR:
+; ************************************************************
+
+; Micro + software running
+; ------------------------------------------------------------
+.MICRO "ATmega128"
+.TOOLCHAIN "GCC"
+.GCCPATH   "D:\WinAVR-20100110"
+.GCCMAKE   AUTO
+.TARGET    "my_idea.hex"
+.SOURCE    "my_idea.c"
+
+.TRACE              ; Activate micro trace
+
+; Following lines are optional; if not included
+; exactly these values are taken by default
+; ------------------------------------------------------------
+.POWER VDD=5 VSS=0  ; Power nodes
+.CLOCK 1meg         ; Micro clock
+.STORE 250m         ; Trace (micro+signals) storage time
+
+; Micro nodes: RESET, AREF, PA0-PA7, PB0-PB7, PC0-PC7, PD0-PD7, PE0-PE7, PF0-PF7, PG0-PG4, TIM1OVF
+; Define here the hardware around the micro
+; ------------------------------------------------------------
+
+D1 VDD n1		;LED D1이 VDD와 n1 node사이에 연결
+R18 n1 PC0 1k	; 저항 R18이 n1 node와 PC0 사이에 연결
+
+D2 VDD n2
+R19 n2 PC1 1k
+
+D3 VDD n3
+R20 n3 PC2 1k
+
+D4 VDD n4
+R21 n4 PC3 1k
+
+D5 VDD n5
+R22 n5 PC4 1k
+
+D6 VDD n6
+R23 n6 PC5 1k
+
+D7 VDD n7
+R24 n7 PC6 1k
+
+D8 VDD n8
+R25 n8 PC7 1k
+
